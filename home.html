@@ -3,9 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Assignment5</title>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font embeded code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <h1>welcome to home page</h1>
+    <header class="mb-10">
+      <nav class="flex bg-[#F9F7F3] justify-between px-28 pt-6 pb-16">
+        <div class="my-auto mx-0">
+          <button
+            id="blog-btn"
+            class="text-xl font-semibold text-[#111111] px-8 py-3 bg-[#B4F461] rounded-lg"
+          >
+            Home
+          </button>
+        </div>
+        <div class="flex mx-0 my-auto gap-x-3">
+          <img src="assets/logo.png" alt="" />
+          <h3 class="text-xl font-semibold text-[#111111] my-auto">
+            Donate Bangladesh
+          </h3>
+        </div>
+        <div class="flex my-auto mx-0 gap-x-3">
+          <img src="assets/coin.png" alt="" />
+          <h4 class="text-xl font-medium text-zinc-900/[.7]">5500 BDT</h4>
+        </div>
+      </nav>
+    </header>
+    <main class="mx-28">
+      <div class="text-3xl font-bold ml-4 mb-10">
+        <h2>Frequently Asked Question here.......</h2>
+      </div>
+      <div class="collapse collapse-plus border border-slate-200 mb-5">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the document object model(DOM) ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface that
+            represents the structure of a webpage as a tree of objects, where
+            each HTML element is a node. It allows developers to access and
+            modify the content, structure, and style of a webpage dynamically
+            using JavaScript. The DOM enables event handling for user
+            interactions and supports dynamic updates without reloading the
+            page. This makes it essential for building interactive and
+            responsive web applications.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus border border-slate-200 mb-5">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from the dom ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            To select an element from the DOM, you can use methods like
+            `getElementById()` to select by `id`, or `getElementsByClassName()`
+            and `getElementsByTagName()` to select by class and tag name,
+            respectively. You can also use `querySelector()` to select the first
+            element matching a CSS selector or `querySelectorAll()` to select
+            all matching elements. These methods allow you to easily target and
+            manipulate elements in a webpage using JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus border border-slate-200 mb-5">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in dom, and why it is useful ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique where a single event listener is
+            added to a parent element to handle events for its child elements
+            using event bubbling. This approach improves performance by reducing
+            the number of event listeners needed, especially when dealing with
+            many dynamic child elements. It simplifies event management and
+            helps optimize memory usage in web applications. Event delegation is
+            particularly useful when elements are frequently added or removed.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus border border-slate-200 mb-5">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Why we have to learn dom ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Learning the DOM is essential because it allows developers to
+            interact with and manipulate the structure and content of a webpage.
+            By understanding the DOM, you can dynamically update HTML elements,
+            handle user inputs, and create interactive and responsive web
+            applications. It is a core part of web development, enabling you to
+            control the behavior and appearance of websites in real-time using
+            JavaScript.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
