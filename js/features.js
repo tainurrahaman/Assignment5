@@ -37,8 +37,8 @@ document.getElementById('noakhali-flood-btn').addEventListener('click',function(
 
     if(UserAmount >= nDonation && nDonation > 0 && isNaN(nDonation)===false){
             const newBalance = NoakhaliFloodTk + nDonation;
-            const userNewBalance = UserAmount - nDonation;
-            document.getElementById('user-amount').innerText = userNewBalance;
+            UserAmount = UserAmount - nDonation;
+            document.getElementById('user-amount').innerText = UserAmount;
             document.getElementById('noakhali-flood-tk').innerText = newBalance;
 
             let div = document.createElement('div');
@@ -52,6 +52,8 @@ document.getElementById('noakhali-flood-btn').addEventListener('click',function(
             document.getElementById('history-section').appendChild(div);
     }else{
          alert('Please give valid input');
+         document.getElementById('my_modal_5').close();
+         return null;
     }
 })
 
@@ -67,9 +69,9 @@ document.getElementById('feni-flood-btn').addEventListener('click',function(even
 
     if(UserAmount >= fDonation && fDonation > 0){
         const newBalance = FeniFloodTk + fDonation;
-        const userNewBalance = UserAmount - fDonation;
+        UserAmount = UserAmount - fDonation;
         document.getElementById('feni-flood-tk').innerText = newBalance;
-        document.getElementById('user-amount').innerText = userNewBalance;
+        document.getElementById('user-amount').innerText = UserAmount;
 
         let div = document.createElement('div');
             let currentDateTime = new Date();
@@ -82,6 +84,8 @@ document.getElementById('feni-flood-btn').addEventListener('click',function(even
             document.getElementById('history-section').appendChild(div);
     }else{
          alert('Please give valid input');
+         document.getElementById('my_modal_5').close();
+         return null;
     }
 })
 
@@ -97,9 +101,9 @@ document.getElementById('quotaprotest-btn').addEventListener('click',function(ev
 
     if(UserAmount >= qDonation && qDonation > 0){
         const newBalance = QuotaProtestTk + qDonation;
-        const userNewBalance = UserAmount - qDonation;
+        UserAmount = UserAmount - qDonation;
         document.getElementById('quotaprotest-tk').innerText = newBalance;
-        document.getElementById('user-amount').innerText = userNewBalance;
+        document.getElementById('user-amount').innerText = UserAmount;
 
         let div = document.createElement('div');
             let currentDateTime = new Date();
@@ -112,6 +116,8 @@ document.getElementById('quotaprotest-btn').addEventListener('click',function(ev
             document.getElementById('history-section').appendChild(div);
     }else{
         alert('Please give valid input');
+        document.getElementById('my_modal_5').close();
+         return null;
     }
 })
 
