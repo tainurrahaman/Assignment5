@@ -23,11 +23,17 @@
       .font-lexend {
         font-family: "Lexend", sans-serif;
       }
+      .header-blur {
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 1000;
+      }
     </style>
   </head>
   <body class="font-lexend">
-    <header>
-      <nav class="flex bg-[#F9F7F3] justify-between px-28 pt-6 pb-16">
+    <header class="sticky top-0 left-0 w-full header-blur">
+      <nav class="flex bg-[#F9F7F3] justify-between px-28 pt-6 pb-10">
         <div class="my-auto mx-0">
           <button
             id="blog-btn"
@@ -50,13 +56,15 @@
           <h4 class="text-xl font-medium text-zinc-900/[.7]">BDT</h4>
         </div>
       </nav>
-      <div class="flex mt-20 gap-x-4 justify-center mb-8">
-        <button id="donation-btn" class="btn btn-lg">Donation</button>
+      <div class="flex mt-4 gap-x-4 justify-center mb-4">
+        <button id="donation-btn" class="btn btn-lg bg-[#B4F461]">
+          Donation
+        </button>
         <button id="history-btn" class="btn btn-lg">History</button>
       </div>
       <div class="divider"></div>
     </header>
-    <main class="mx-28 my-20">
+    <main class="mx-28 mt-8 mb-20">
       <div id="donation-section">
         <div
           class="grid grid-cols-2 border border-slate-200 rounded-2xl px-12 py-8 gap-x-8 my-8"
