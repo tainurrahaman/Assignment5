@@ -42,9 +42,12 @@
             Donate Bangladesh
           </h3>
         </div>
-        <div class="flex my-auto mx-0 gap-x-3">
+        <div class="flex my-auto mx-0 gap-x-1">
           <img src="assets/coin.png" alt="" />
-          <h4 class="text-xl font-medium text-zinc-900/[.7]">5500 BDT</h4>
+          <h4 id="user-amount" class="text-xl font-medium text-zinc-900/[.7]">
+            5500
+          </h4>
+          <h4 class="text-xl font-medium text-zinc-900/[.7]">BDT</h4>
         </div>
       </nav>
       <div class="flex mt-20 gap-x-4 justify-center mb-8">
@@ -63,10 +66,15 @@
           </div>
           <div>
             <div
-              class="bg-[#F3F3F3] flex mx-0 my-auto max-w-28 px-4 py-3 gap-x-1 rounded-lg mb-4"
+              class="bg-[#F3F3F3] flex mx-0 my-auto max-w-40 px-4 py-3 gap-x-1 rounded-lg mb-4"
             >
               <img src="assets/coin.png" alt="" />
-              <p class="my-auto text-base font-normal text-zinc-900/[.7]">0</p>
+              <p
+                id="noakhali-flood-tk"
+                class="my-auto text-base font-normal text-zinc-900/[.7]"
+              >
+                0
+              </p>
               <p class="my-auto text-base font-normal text-zinc-900/[.7]">
                 BDT
               </p>
@@ -83,12 +91,14 @@
               lives of those in need.
             </p>
             <input
+              id="donation-noakhali"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mb-4"
             />
             <br />
             <button
+              id="noakhali-flood-btn"
               class="text-xl font-semibold text-[#111111] px-8 py-3 bg-[#B4F461] rounded-lg w-full"
             >
               Donate Now
@@ -103,10 +113,15 @@
           </div>
           <div>
             <div
-              class="bg-[#F3F3F3] flex mx-0 my-auto max-w-28 px-4 py-3 gap-x-1 rounded-lg mb-4"
+              class="bg-[#F3F3F3] flex mx-0 my-auto max-w-40 px-4 py-3 gap-x-1 rounded-lg mb-4"
             >
               <img src="assets/coin.png" alt="" />
-              <p class="my-auto text-base font-normal text-zinc-900/[.7]">0</p>
+              <p
+                id="feni-flood-tk"
+                class="my-auto text-base font-normal text-zinc-900/[.7]"
+              >
+                0
+              </p>
               <p class="my-auto text-base font-normal text-zinc-900/[.7]">
                 BDT
               </p>
@@ -125,12 +140,14 @@
               urgent need.
             </p>
             <input
+              id="donation-feni"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mb-4"
             />
             <br />
             <button
+              id="feni-flood-btn"
               class="text-xl font-semibold text-[#111111] px-8 py-3 bg-[#B4F461] rounded-lg w-full"
             >
               Donate Now
@@ -145,10 +162,15 @@
           </div>
           <div>
             <div
-              class="bg-[#F3F3F3] flex mx-0 my-auto max-w-28 px-4 py-3 gap-x-1 rounded-lg mb-4"
+              class="bg-[#F3F3F3] flex mx-0 my-auto max-w-40 px-4 py-3 gap-x-1 rounded-lg mb-4"
             >
               <img src="assets/coin.png" alt="" />
-              <p class="my-auto text-base font-normal text-zinc-900/[.7]">0</p>
+              <p
+                id="quotaprotest-tk"
+                class="my-auto text-base font-normal text-zinc-900/[.7]"
+              >
+                0
+              </p>
               <p class="my-auto text-base font-normal text-zinc-900/[.7]">
                 BDT
               </p>
@@ -168,12 +190,14 @@
               their time of need.
             </p>
             <input
+              id="donation-quota"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mb-4"
             />
             <br />
             <button
+              id="quotaprotest-btn"
               class="text-xl font-semibold text-[#111111] px-8 py-3 bg-[#B4F461] rounded-lg w-full"
             >
               Donate Now
@@ -181,7 +205,10 @@
           </div>
         </div>
       </div>
-      <div id="history-section" class="hidden order border-slate-200">
+      <div
+        id="history-section"
+        class="hidden rounded-xl border border-slate-200"
+      >
         <h1>donated</h1>
       </div>
     </main>
@@ -189,7 +216,7 @@
       <div class="bg-[#F9F7F3] h-32"></div>
     </footer>
     <script src="js/home.js"></script>
-    <script src="js/features.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
