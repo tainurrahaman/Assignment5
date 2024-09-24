@@ -15,6 +15,11 @@ function inputFeildById(id){
 function donationAmount(id){
     const donation = document.getElementById(id).value;
     const Donation = parseFloat(donation)
-   
     return Donation;
+}
+
+function colorChange(id){
+    document.getElementById('donation-btn').classList.remove('bg-[#B4F461]');
+    document.getElementById('history-btn').classList.remove('bg-[#B4F461]');
+    document.getElementById(id).classList.add('bg-[#B4F461]');
 }

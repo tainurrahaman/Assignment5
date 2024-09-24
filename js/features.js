@@ -9,6 +9,18 @@ document.getElementById('history-btn').addEventListener('click',function(event){
     togglebtn('history-section');
 })
 
+// Button color Change
+
+document.getElementById('donation-btn').addEventListener('click',function(event){
+    event.preventDefault;
+   colorChange('donation-btn');
+})
+
+document.getElementById('history-btn').addEventListener('click',function(event){
+    event.preventDefault;
+   colorChange('history-btn');
+})
+
 // Calculate User Amonut
     const userAmount = document.getElementById('user-amount').innerText;
     let UserAmount = parseFloat(userAmount);
@@ -21,6 +33,7 @@ document.getElementById('noakhali-flood-btn').addEventListener('click',function(
     const NoakhaliFloodTk = inputFeildById('noakhali-flood-tk')
     const nDonation = donationAmount('donation-noakhali')
     console.log(NoakhaliFloodTk,nDonation);
+   
 
     if(UserAmount >= nDonation && nDonation > 0 && isNaN(nDonation)===false){
             const newBalance = NoakhaliFloodTk + nDonation;
@@ -50,6 +63,7 @@ document.getElementById('feni-flood-btn').addEventListener('click',function(even
     const FeniFloodTk = inputFeildById('feni-flood-tk');
     const fDonation = donationAmount('donation-feni');
     console.log(FeniFloodTk,fDonation)
+   
 
     if(UserAmount >= fDonation && fDonation > 0){
         const newBalance = FeniFloodTk + fDonation;
@@ -79,6 +93,7 @@ document.getElementById('quotaprotest-btn').addEventListener('click',function(ev
     const QuotaProtestTk = inputFeildById('quotaprotest-tk');
     const qDonation = donationAmount('donation-quota')
     console.log(QuotaProtestTk, qDonation)
+   
 
     if(UserAmount >= qDonation && qDonation > 0){
         const newBalance = QuotaProtestTk + qDonation;
