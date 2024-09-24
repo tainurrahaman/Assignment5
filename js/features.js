@@ -17,6 +17,7 @@ document.getElementById('history-btn').addEventListener('click',function(event){
 
 document.getElementById('noakhali-flood-btn').addEventListener('click',function(event){
     event.preventDefault;
+    const noakhaliHeading = document.getElementById('noakhali-heading').innerText;
     const NoakhaliFloodTk = inputFeildById('noakhali-flood-tk')
     const nDonation = donationAmount('donation-noakhali')
     console.log(NoakhaliFloodTk,nDonation);
@@ -26,6 +27,16 @@ document.getElementById('noakhali-flood-btn').addEventListener('click',function(
             const userNewBalance = UserAmount - nDonation;
             document.getElementById('user-amount').innerText = userNewBalance;
             document.getElementById('noakhali-flood-tk').innerText = newBalance;
+
+            let div = document.createElement('div');
+            let currentDateTime = new Date();
+            let formattedDateTime = currentDateTime.toString();
+            div.classList.add('text-xl','p-8');
+            div.innerHTML = `
+                 <p>${nDonation} Tk. is ${noakhaliHeading}</p>
+                <p>Date: ${formattedDateTime}</p>
+            `
+            document.getElementById('history-section').appendChild(div);
     }else{
          alert('Please give valid input');
     }
@@ -35,6 +46,7 @@ document.getElementById('noakhali-flood-btn').addEventListener('click',function(
 
 document.getElementById('feni-flood-btn').addEventListener('click',function(event){
     event.preventDefault;
+    const feniHeading = document.getElementById('feni-heading').innerText;
     const FeniFloodTk = inputFeildById('feni-flood-tk');
     const fDonation = donationAmount('donation-feni');
     console.log(FeniFloodTk,fDonation)
@@ -44,6 +56,16 @@ document.getElementById('feni-flood-btn').addEventListener('click',function(even
         const userNewBalance = UserAmount - fDonation;
         document.getElementById('feni-flood-tk').innerText = newBalance;
         document.getElementById('user-amount').innerText = userNewBalance;
+
+        let div = document.createElement('div');
+            let currentDateTime = new Date();
+            let formattedDateTime = currentDateTime.toString();
+            div.classList.add('text-xl','p-8');
+            div.innerHTML = `
+                 <p>${fDonation} Tk. is ${feniHeading}</p>
+                <p>Date: ${formattedDateTime}</p>
+            `
+            document.getElementById('history-section').appendChild(div);
     }else{
          alert('Please give valid input');
     }
@@ -53,6 +75,7 @@ document.getElementById('feni-flood-btn').addEventListener('click',function(even
 
 document.getElementById('quotaprotest-btn').addEventListener('click',function(event){
     event.preventDefault;
+    const quotaHeading = document.getElementById('quota-heading').innerText;
     const QuotaProtestTk = inputFeildById('quotaprotest-tk');
     const qDonation = donationAmount('donation-quota')
     console.log(QuotaProtestTk, qDonation)
@@ -62,6 +85,16 @@ document.getElementById('quotaprotest-btn').addEventListener('click',function(ev
         const userNewBalance = UserAmount - qDonation;
         document.getElementById('quotaprotest-tk').innerText = newBalance;
         document.getElementById('user-amount').innerText = userNewBalance;
+
+        let div = document.createElement('div');
+            let currentDateTime = new Date();
+            let formattedDateTime = currentDateTime.toString();
+            div.classList.add('text-xl','p-8');
+            div.innerHTML = `
+                 <p>${qDonation} Tk. is ${quotaHeading}</p>
+                <p>Date: ${formattedDateTime}</p>
+            `
+            document.getElementById('history-section').appendChild(div);
     }else{
         alert('Please give valid input');
     }

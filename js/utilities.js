@@ -15,6 +15,6 @@ function inputFeildById(id){
 function donationAmount(id){
     const donation = document.getElementById(id).value;
     const Donation = parseFloat(donation)
-    
-        return Donation;
+   
+    return Donation;
 }
